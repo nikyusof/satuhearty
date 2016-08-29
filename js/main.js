@@ -18,22 +18,60 @@ _gaq.push(['_trackPageview']);
 var HOME_SECTION = 0;
 var INFO_SECTION = 1;
 var CONTACT_SECTION = 2;
+var FOURTH_SECTION = 3;
+
+var TYPEDARRAY_TEXT_FIELD = 'text';
+var TYPEDARRAY_INITIALIZED_FIELD = 'initialized';
+
+var typedArray = [];
+
+function initializeTypedArrayEntry(index, text) {
+  typedArray[index] = [];
+  typedArray[index][TYPEDARRAY_TEXT_FIELD] = text;
+  typedArray[index][TYPEDARRAY_INITIALIZED_FIELD] = false;
+}
+
+function initializeTypedArray() {
+  initializeTypedArrayEntry(HOME_SECTION, ['Hello World. My name is Nik']);
+  initializeTypedArrayEntry(INFO_SECTION, ['We create beautiful websites']);
+  initializeTypedArrayEntry(CONTACT_SECTION, []);
+  initializeTypedArrayEntry(FOURTH_SECTION, []);
+}
+
+function initializeTyped($element, textToDisplay) {
+  $element.typed({
+    strings: textToDisplay,
+    showCursor: false
+  })
+}
 
 /**
  * Initialization function
  */
 $(document).ready(function() {
+  initializeTypedArray();
+
   var slider = $('.bxslider').bxSlider({
     speed: 350,
-    pager: false,
     nextSelector: '#slider-next',
+    prevSelector: '#slider-prev',
     nextText: '',
+    prevText: '',
+    pager: false,
+    onSliderLoad: function(currentIndex) {
+      initializeTyped($('.js-slide-one'), typedArray[currentIndex][TYPEDARRAY_TEXT_FIELD], currentIndex);
+      typedArray[currentIndex][TYPEDARRAY_INITIALIZED_FIELD] = true;
+    },
     onSlideAfter: function(e, oldIndex, newIndex) {
-      if (newIndex == INFO_SECTION) {
-        $('.js-second-slide').typed({
-          strings: ['Hello World. My name is Nik'],
-          typeSpeed: 0
-        });
+      var hasInitialized = typedArray[newIndex][TYPEDARRAY_INITIALIZED_FIELD];
+      if (!hasInitialized) {
+        var text = typedArray[newIndex][TYPEDARRAY_TEXT_FIELD];
+        if (newIndex == HOME_SECTION) {
+          initializeTyped($('.js-slide-one'), text);
+        } else if (newIndex == INFO_SECTION) {
+          initializeTyped($('.js-slide-two'), text);
+        }
+        typedArray[newIndex][TYPEDARRAY_INITIALIZED_FIELD] = true;
       }
     }
   });

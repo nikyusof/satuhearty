@@ -35,21 +35,46 @@
   <div id="header">
     <ul id="navigation">
       <li class="js-nav" data-index="0">Logo</li>
-      <li class="js-nav" data-index="1">Why</li>
-      <li class="js-nav" data-index="2">Request</li>
+      <li class="js-nav" data-index="1">Info</li>
+      <li class="js-nav" data-index="2">Work</li>
+      <li class="js-nav" data-index="3">Request</li>
     </ul>
   </div>
 
   <ul class="bxslider">
-    <li class="slide-one"><h1 class="js-first-slide"></h1><h1 class="typed-cursor">|</h1></li>
-    <li class="slide-extra"><h2 class="js-second-slide"><span class="underscore">_</span></h2></li>
-    <li class="slide-two"><h2>Passionate web developer<span class="underscore">_</span></h2></li>
-    <li class="slide-three"><p>Owner of <a title="Mens Hair Products" href="http://grizzlyhair.com" target="_blank">Grizzly Hair</a><span class="underscore">_</span></p></li>
-    <li class="slide-four"><p>Working at <a href="http://2ammedia.co.uk" target="_blank">2am</a><span class="underscore">_</span></p></li>
-    <li class="slide-five"><p><a href="mailto:daryl@darylbrunsden.co.uk">Email</a>, <a target="_blank" href="http://uk.linkedin.com/pub/daryl-brunsden/22/5aa/76/">Connect</a>, <a target="_blank" rel="author" href="https://plus.google.com/113825678341911178201?rel=author">Plus</a>, <a target="_blank" href="https://twitter.com/darylbrunsden">Tweet</a>.</p></li>
+    <li class="slide-one"><p class="js-slide-one"></p></li>
+    <li class="slide-extra"><p class="js-slide-two"></p></li>
+    <li class="slide-two"><p class="js-slide-three">Passionate web developer<span class="typed-cursor">_</span></p></li>
+    <li class="slide-four request-section">
+      <form name="inquire" id="inquire" class="request-form" action="//formspree.io/mukmeenmaisarah@gmail.com" method="POST">
+        <div class="request-input-group">
+          <label for="name">My Name is </label>
+          <input type="text" id="name" name="name" class="request-input" placeholder="Hello World" autocomplete="off" />
+        </div>
+        <div class="request-input-group">
+          <label for="name">My Email is </label>
+          <input type="text" id="email" name="email" class="request-input" placeholder="Hello World" autocomplete="off" />
+        </div>
+        <div class="request-input-group">
+          <label for="name">My Phone # is </label>
+          <input type="text" id="guests" name="guests" class="request-input" placeholder="Hello World" autocomplete="off" />
+        </div>
+        <div class="request-input-group">
+          <label for="name">My Name is </label>
+          <input type="text" id="attending" name="attending" class="request-input" placeholder="Hello World" autocomplete="off" />
+        </div>
+        <div class="submit-container">
+          <button class="submit-btn" type="submit">Submit</button>
+          <input type="hidden" name="_next" value="/index.html" />
+          <input type="hidden" name="_cc" value="nikmdyusof@mukmeenmaisarah.com,zahariahothman@mukmeenmaisarah.com,juliaayesya@mukmeenmaisarah.com" />
+          <input type="hidden" name="_subject" value="Wedding RSVP" />
+        </div>
+      </form>
+    </li>
   </ul>
 
   <div class="outside">
+    <span id="slider-prev"></span>
     <span id="slider-next"></span>
   </div>
 
