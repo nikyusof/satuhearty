@@ -21,6 +21,8 @@
   <!-- Styes -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/bxslider.css">
+  <link rel="stylesheet" type="text/css" href="styles/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="styles/animate.css" />
   <link rel="stylesheet" href="styles/main.css">
 
   <!-- Initial Scripts -->
@@ -30,58 +32,97 @@
 
 </head>
 <body>
+  <nav class="nav">
+    <div class="float-menu">
+      <ul class="menu">
+        <li class="submenu js-nav" data-menuanchor="slide-one"><a href="#slide-one">Home</a></li>
+        <li class="submenu js-nav" data-menuanchor="slide-two"><a href="#slide-two">Info</a></li>
+        <li class="submenu js-nav" data-menuanchor="slide-three"><a href="#slide-three">Work</a></li>
+        <li class="submenu js-nav" data-menuanchor="slide-four"><a href="#slide-four">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <!-- Side Navigation -->
-  <div id="header">
-    <ul id="navigation">
-      <li class="js-nav" data-index="0">Logo</li>
-      <li class="js-nav" data-index="1">Info</li>
-      <li class="js-nav" data-index="2">Work</li>
-      <li class="js-nav" data-index="3">Request</li>
-    </ul>
+  <div id="fullpage">
+
+    <!-- Main Section -->
+    <div class="section slide-one" data-anchor="slide-one">
+      <div class="slide content" data-anchor="slide1">
+        <h2 class="tlt"></h2>
+      </div>
+      <div class="slide" data-anchor="slide2">
+        <img class="image-slider" src="images/slide-two.jpg" />
+      </div>
+      <div class="slide" data-anchor="slide3">
+        <img class="image-slider" src="images/slide-three.jpg" />
+      </div>
+      <div class="slide" data-anchor="slide4">
+        <img class="image-slider" src="images/slide-four.jpg" />
+      </div>
+    </div>
+
+    <!-- Info Section -->
+    <div class="section slide-two" data-anchor="slide-two">
+      <div class="tlt"></div>
+    </div>
+
+    <!-- Work Section -->
+    <div class="section slide-three" data-anchor="slide-three">
+      Our Work
+    </div>
+
+    <!-- About Us Section -->
+    <div class="section slide-four" data-anchor="slide-four">
+      <div class="component">
+        <h2 class="">Follow Us</h2>
+        <a href="#" class="icon icon-slide facebook">facebook</a>
+        <a href="#" class="icon icon-slide twitter">twitter</a>
+        <a href="#" class="icon icon-slide googleplus">google+</a>
+        <a href="#" class="icon icon-slide github">github</a>
+        <a href="#" class="icon icon-slide rss">rss</a>
+      </div>
+    </div>
+    <div class="section fp-auto-height footer" data-anchor="slide-five">
+      <div class="copyright">
+        Satu Hearty Sdn Bhd &copy; 2016. All Copyright Reserved
+      </div>
+    </div>
   </div>
 
-  <ul class="bxslider">
-    <li class="slide-one"><p class="js-slide-one"></p></li>
-    <li class="slide-extra"><p class="js-slide-two"></p></li>
-    <li class="slide-two"><p class="js-slide-three">Passionate web developer<span class="typed-cursor">_</span></p></li>
-    <li class="slide-four request-section">
-      <form name="inquire" id="inquire" class="request-form" action="//formspree.io/mukmeenmaisarah@gmail.com" method="POST">
-        <div class="request-input-group">
-          <label for="name">My Name is </label>
-          <input type="text" id="name" name="name" class="request-input" placeholder="Hello World" autocomplete="off" />
-        </div>
-        <div class="request-input-group">
-          <label for="name">My Email is </label>
-          <input type="text" id="email" name="email" class="request-input" placeholder="Hello World" autocomplete="off" />
-        </div>
-        <div class="request-input-group">
-          <label for="name">My Phone # is </label>
-          <input type="text" id="guests" name="guests" class="request-input" placeholder="Hello World" autocomplete="off" />
-        </div>
-        <div class="request-input-group">
-          <label for="name">My Name is </label>
-          <input type="text" id="attending" name="attending" class="request-input" placeholder="Hello World" autocomplete="off" />
-        </div>
-        <div class="submit-container">
-          <button class="submit-btn" type="submit">Submit</button>
-          <input type="hidden" name="_next" value="/index.html" />
-          <input type="hidden" name="_cc" value="nikmdyusof@mukmeenmaisarah.com,zahariahothman@mukmeenmaisarah.com,juliaayesya@mukmeenmaisarah.com" />
-          <input type="hidden" name="_subject" value="Wedding RSVP" />
-        </div>
-      </form>
-    </li>
-  </ul>
-
-  <div class="outside">
-    <span id="slider-prev"></span>
-    <span id="slider-next"></span>
-  </div>
+  <!--<section class="container four slide-four request-section">-->
+    <!--<form name="inquire" id="inquire" class="request-form" action="//formspree.io/mukmeenmaisarah@gmail.com" method="POST">-->
+      <!--<div class="request-input-group">-->
+        <!--<label for="name">My Name is </label>-->
+        <!--<input type="text" id="name" name="name" class="request-input" placeholder="Hello World" autocomplete="off" />-->
+      <!--</div>-->
+      <!--<div class="request-input-group">-->
+        <!--<label for="name">My Email is </label>-->
+        <!--<input type="text" id="email" name="email" class="request-input" placeholder="Hello World" autocomplete="off" />-->
+      <!--</div>-->
+      <!--<div class="request-input-group">-->
+        <!--<label for="name">My Phone # is </label>-->
+        <!--<input type="text" id="guests" name="guests" class="request-input" placeholder="Hello World" autocomplete="off" />-->
+      <!--</div>-->
+      <!--<div class="request-input-group">-->
+        <!--<label for="name">My Name is </label>-->
+        <!--<input type="text" id="attending" name="attending" class="request-input" placeholder="Hello World" autocomplete="off" />-->
+      <!--</div>-->
+      <!--<div class="submit-container">-->
+        <!--<button class="submit-btn" type="submit">Submit</button>-->
+        <!--<input type="hidden" name="_next" value="/index.html" />-->
+        <!--<input type="hidden" name="_cc" value="nikmdyusof@mukmeenmaisarah.com,zahariahothman@mukmeenmaisarah.com,juliaayesya@mukmeenmaisarah.com" />-->
+        <!--<input type="hidden" name="_subject" value="Wedding RSVP" />-->
+      <!--</div>-->
+    <!--</form>-->
+  <!--</section>-->
 
   <!-- JavaScript -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/plugins.js"></script>
+  <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/typed.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fittext.js"></script>
+  <script type="text/javascript" src="js/jquery.lettering.js"></script>
+  <script type="text/javascript" src="js/jquery.textillate.js"></script>
   <script src="js/main.js"></script>
 
 </body>
