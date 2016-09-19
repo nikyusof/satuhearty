@@ -51,6 +51,7 @@ body,
 input {
 	font-size: 1em;
 	color: white;
+	background-color: black;
 	line-height: 1.4;
 	font-family: 'Quicksand', 'Arial Black', sans-serif !important;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -72,7 +73,7 @@ a {
 }
 
 a:hover {
-	border-bottom: 2px solid;
+	text-decoration: none;
 }
 
 ::-moz-selection {
@@ -333,6 +334,10 @@ div.outside {
 	margin-right: 20px;
 }
 
+.submenu a:hover {
+	border-bottom: 2px solid;
+}
+
 .menu {
 	position:absolute;
 	*zoom:1;
@@ -373,6 +378,7 @@ div.outside {
 
 .section {
 	text-align:center;
+	font-size: 1.4vh;
 }
 
 /* =============================================================================
@@ -508,4 +514,41 @@ div.outside {
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
 	background: white;
+}
+
+.satuhearty-wrap {
+	position: fixed;
+	z-index: 9999;
+	top: 1vh;
+	left: 1vh;
+}
+
+.satuhearty {
+	height: 3vh;
+	width: 3vh;
+}
+
+#info {
+	width: 80%;
+	height: 80%;
+	margin: auto;
+}
+
+.item {
+	background: white;
+	width: 320px;
+	height: 320px;
+	margin: 10px;
+}
+
+.col-xs {
+	margin: 1vh;
+	padding: 1vh;
+	/*background-color: #7F7E7E;*/
+	border-radius: 10px;
+}
+
+.row {
+	padding: 0 3vh;
+	height: 25%
 }

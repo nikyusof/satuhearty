@@ -54,13 +54,16 @@ $(document).ready(function() {
   var fullpage = $('#fullpage').fullpage({
     slidesNavigation: true,
     slidesNavPosition: 'bottom',
-    sectionsColor : ['#000', 'rgb(220,79,83)', 'rgb(171, 221, 182)', 'rgb(212, 145, 182)', '#2970bc'],
+    sectionsColor : ['#000', '#000', '#000', '#000', '#2970bc'],
     anchors: ['slide-one', 'slide-two', 'slide-three', 'slide-four', 'slide-five'],
     menu: '.menu',
     afterRender: function () {
       setInterval(function () {
         $.fn.fullpage.moveSlideRight();
       }, 6000);
+    },
+    onLeave: function (index, nextIndex, direction) {
+
     }
   });
 
@@ -68,36 +71,6 @@ $(document).ready(function() {
     strings: ['Satu Hearty.'],
     showCursor: false
   });
-
-  // var slider = $('.bxslider').bxSlider({
-  //   speed: 350,
-  //   nextSelector: '#slider-next',
-  //   prevSelector: '#slider-prev',
-  //   nextText: '',
-  //   prevText: '',
-  //   pager: false,
-  //   onSliderLoad: function(currentIndex) {
-  //     initializeTyped($('.js-slide-one'), typedArray[currentIndex][TYPEDARRAY_TEXT_FIELD], currentIndex);
-  //     typedArray[currentIndex][TYPEDARRAY_INITIALIZED_FIELD] = true;
-  //   },
-  //   onSlideAfter: function(e, oldIndex, newIndex) {
-  //     var hasInitialized = typedArray[newIndex][TYPEDARRAY_INITIALIZED_FIELD];
-  //     if (!hasInitialized) {
-  //       var text = typedArray[newIndex][TYPEDARRAY_TEXT_FIELD];
-  //       if (newIndex == HOME_SECTION) {
-  //         initializeTyped($('.js-slide-one'), text);
-  //       } else if (newIndex == INFO_SECTION) {
-  //         initializeTyped($('.js-slide-two'), text);
-  //       }
-  //       typedArray[newIndex][TYPEDARRAY_INITIALIZED_FIELD] = true;
-  //     }
-  //   }
-  // });
-
-  // $('.js-nav').on('click', function(e) {
-  //   e.preventDefault();
-  //   fullpage.goToSlide(e.currentTarget.dataset.index);
-  // });
 });
 
 /* Fix the rotation bug on iphoneipad */
