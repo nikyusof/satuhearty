@@ -15,10 +15,10 @@ _gaq.push(['_trackPageview']);
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
-var HOME_SECTION = 0;
-var INFO_SECTION = 1;
-var CONTACT_SECTION = 2;
-var FOURTH_SECTION = 3;
+var HOME_SECTION = 1;
+var INFO_SECTION = 2;
+var CONTACT_SECTION = 3;
+var ABOUT_SECTION = 4;
 
 var TYPEDARRAY_TEXT_FIELD = 'text';
 var TYPEDARRAY_INITIALIZED_FIELD = 'initialized';
@@ -35,7 +35,7 @@ function initializeTypedArray() {
   initializeTypedArrayEntry(HOME_SECTION, ['Hello World. My name is Nik']);
   initializeTypedArrayEntry(INFO_SECTION, ['We create beautiful websites']);
   initializeTypedArrayEntry(CONTACT_SECTION, []);
-  initializeTypedArrayEntry(FOURTH_SECTION, []);
+  initializeTypedArrayEntry(ABOUT_SECTION, []);
 }
 
 function initializeTyped($element, textToDisplay) {
@@ -55,7 +55,7 @@ $(document).ready(function() {
     slidesNavigation: true,
     slidesNavPosition: 'bottom',
     sectionsColor : ['#000', '#000', '#000', '#000', '#2970bc'],
-    anchors: ['slide-one', 'slide-two', 'slide-three', 'slide-four', 'slide-five'],
+    anchors: ['home', 'info', 'work', 'about', 'copyright'],
     menu: '.menu',
     afterRender: function () {
       setInterval(function () {
@@ -63,14 +63,18 @@ $(document).ready(function() {
       }, 6000);
     },
     onLeave: function (index, nextIndex, direction) {
-
+      if (nextIndex == ABOUT_SECTION) {
+        $('.js-follow-us').textillate();
+      }
     }
   });
 
-  $('.tlt').typed({
-    strings: ['Satu Hearty.'],
-    showCursor: false
-  });
+  // $('.tlt').typed({
+  //   strings: ['Satu Hearty.'],
+  //   showCursor: false
+  // });
+
+  $('.tlt').textillate();
 });
 
 /* Fix the rotation bug on iphoneipad */
