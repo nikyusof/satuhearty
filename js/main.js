@@ -24,6 +24,7 @@ var TYPEDARRAY_TEXT_FIELD = 'text';
 var TYPEDARRAY_INITIALIZED_FIELD = 'initialized';
 
 var typedArray = [];
+var origami;
 
 function initializeTypedArrayEntry(index, text) {
   typedArray[index] = [];
@@ -43,6 +44,49 @@ function initializeTyped($element, textToDisplay) {
     strings: textToDisplay,
     showCursor: false
   })
+}
+
+function initiateAnimation(method, angle) {
+  switch (method) {
+    case 'foldUp':
+      origami.foldUp();
+      break;
+    case 'accordion':
+      origami.accordion(angle);
+      break;
+    case 'stairs':
+      origami.stairs(angle);
+      break;
+    case 'curl':
+      origami.curl(angle);
+      break;
+    case 'reveal':
+      origami.reveal(angle);
+      break;
+    case 'ramp':
+      origami.ramp(angle);
+      break;
+    case 'twist':
+      origami.twist(angle);
+      break;
+    case 'fracture':
+      origami.fracture(angle);
+      break;
+  }
+}
+
+function animate() {
+  var methods = ['accordion', 'stairs', 'curl', 'reveal', 'foldUp', 'ramp', 'twist', 'fracture'];
+  var method = methods[Math.abs(Math.floor(Math.random() * methods.length - Math.random()))];
+  var angle = Math.floor(Math.random() * 80 * (Math.random() > .5 ? -1 : 1));
+  initiateAnimation(method, angle);
+}
+
+function startAnimate() {
+  animate();
+  setTimeout(function() {
+    startAnimate();
+  }, 2000);
 }
 
 /**
@@ -68,6 +112,15 @@ $(document).ready(function() {
       }
     }
   });
+
+  origami = new OriDomi('.mm', {
+    vPanels: 6,
+    hPanels: 3,
+    ripple: true
+  });
+
+  startAnimate();
+
 
   // $('.tlt').typed({
   //   strings: ['Satu Hearty.'],

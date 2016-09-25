@@ -199,8 +199,8 @@ div.outside {
 
 .request-form {
 	top: 20% !important; /* override the top for other sections */
-	font-size: 3.5vw !important;
-	line-height: 40px !important;
+	font-size: 2vh !important;
+	line-height: 4vh !important;
 }
 
 .request-input {
@@ -535,6 +535,7 @@ div.outside {
 
 .info-title {
 	font-weight: bold;
+	margin-top: 2vh;
 }
 
 .info-description {
@@ -543,7 +544,8 @@ div.outside {
 
 .row {
 	padding: 0 3vh;
-	height: 10%
+	height: 20%;
+	flex-wrap: nowrap;
 }
 
 .rsvp-logo,
@@ -559,4 +561,20 @@ div.outside {
 
 .photo-gallery-logo {
 	width: 4vh;
+}
+
+.mm {
+	margin: auto auto 3vh auto;
+	max-width: 30vh;
+	min-height: 12vh;
+	background: url('../images/mm.png') no-repeat center center;
+	background-size: 30vh;
+}
+
+.work-details {
+	z-index: 9999;
+}
+
+.work-details:hover {
+	text-decoration: underline;
 }
