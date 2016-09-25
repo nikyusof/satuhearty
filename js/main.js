@@ -54,8 +54,8 @@ $(document).ready(function() {
   var fullpage = $('#fullpage').fullpage({
     slidesNavigation: true,
     slidesNavPosition: 'bottom',
-    sectionsColor : ['#000', '#000', '#000', '#000', '#2970bc'],
-    anchors: ['home', 'info', 'work', 'about', 'copyright'],
+    sectionsColor : ['#000', '#000', '#000', '#000', '#000'],
+    anchors: ['home', 'info', 'work', 'request', 'about', 'copyright'],
     menu: '.menu',
     afterRender: function () {
       setInterval(function () {

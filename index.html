@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <head>
 
-  <title>YouNique | Wedding Web Designer.</title>
+  <title>Satu Hearty | Wedding Web Designer.</title>
 
   <!-- Meta Tags -->
   <meta charset="utf-8">
@@ -15,7 +15,7 @@
   <meta name="MobileOptimized" content="320">
   <meta name="HandheldFriendly" content="True">
   <meta property="og:title" content="SatuHearty | Wedding Web Designer.">
-  <meta property="og:image" content="http://darylbrunsden.co.uk/images/darylbrunsden-logo.png">
+  <!--<meta property="og:image" content="">-->
   <meta property="og:url" content="http://satuhearty.com">
 
   <!-- Styes -->
@@ -43,6 +43,7 @@
         <li class="submenu js-nav" data-menuanchor="home"><a href="#home">Home</a></li>
         <li class="submenu js-nav" data-menuanchor="info"><a href="#info">Info</a></li>
         <li class="submenu js-nav" data-menuanchor="work"><a href="#work">Work</a></li>
+        <li class="submenu js-nav" data-menuanchor="request"><a href="#request">Request</a></li>
         <li class="submenu js-nav" data-menuanchor="about"><a href="#about">About Us</a></li>
       </ul>
     </div>
@@ -68,40 +69,87 @@
 
     <!-- Info Section -->
     <div class="section slide-two" data-anchor="info">
+      <!-- First Row -->
       <div class="row">
-        <div class="col-xs">
-          <div class="box-row">
-            Wedding cards are cool.<br>
-            Wedding websites are cooler.
+        <div class="col-md-4 info-block">
+          <div class="box">
+            <img src="images/website.png" class="website-logo" />
           </div>
         </div>
-        <div class="col-xs">
-          <div class="box-row">
-            Responsive web design.
+        <div class="col-md-8 info-block">
+          <div class="box">
+            <div class="info-title">Personalized wedding website.</div>
+            <span class="info-description">Wedding cards are cool. Wedding websites are cooler.</span>
           </div>
         </div>
       </div>
+      <!-- Second Row -->
       <div class="row">
-        <div class="col-xs">
-          <div class="box-row">
-            Maps Navigation.
+        <div class="col-md-8 info-block">
+          <div class="box">
+            <div class="info-title">Responsive web design.</div>
+            <span class="info-description">Supports all platforms (phone, tablet, laptop, and desktop).</span>
           </div>
         </div>
-        <div class="col-xs">
-          <div class="box-row">
-            Social sharing.
-          </div>
-        </div>
-        <div class="col-xs">
-          <div class="box-row">
-            RSVP.
+        <div class="col-md-4 info-block">
+          <div class="box">
+            <img src="images/responsive.png" class="responsive-logo" />
           </div>
         </div>
       </div>
+      <!-- Third Row -->
       <div class="row">
-        <div class="col-xs">
-          <div class="box-row">
-            Photo Gallery.
+        <div class="col-md-4 info-block">
+          <div class="box">
+            <img src="images/social-sharing.png" class="social-sharing-logo" />
+          </div>
+        </div>
+        <div class="col-md-8 info-block">
+          <div class="box">
+            <div class="info-title">Social sharing.</div>
+            <span class="info-description">Include any social platforms of your preference.</span>
+          </div>
+        </div>
+      </div>
+      <!-- Fourth Row -->
+      <div class="row">
+        <div class="col-md-8 info-block">
+          <div class="box">
+            <div class="info-title">Maps Navigation.</div>
+            <span class="info-description">Make sure your attendees don't get lost.<br>Include maps navigation to your wedding location.</span>
+          </div>
+        </div>
+        <div class="col-md-4 info-block">
+          <div class="box">
+            <img src="images/maps.png" class="maps-logo" />
+          </div>
+        </div>
+      </div>
+      <!-- Fifth Row -->
+      <div class="row">
+        <div class="col-md-4 info-block">
+          <div class="box">
+            <img src="images/rsvp.png" class="rsvp-logo" />
+          </div>
+        </div>
+        <div class="col-md-8 info-block">
+          <div class="box">
+            <div class="info-title">RSVP.</div>
+            <span class="info-description">Attendees can send RSVPs directly to your email.</span>
+          </div>
+        </div>
+      </div>
+      <!-- Sixth Row -->
+      <div class="row">
+        <div class="col-md-8 info-block">
+          <div class="box">
+            <div class="info-title">Photo Gallery.</div>
+            <span class="info-description">Have your own photo gallery for people to view.</span>
+          </div>
+        </div>
+        <div class="col-md-4 info-block">
+          <div class="box">
+            <img src="images/photo-gallery.png" class="photo-gallery-logo" />
           </div>
         </div>
       </div>
@@ -109,18 +157,44 @@
 
     <!-- Work Section -->
     <div class="section slide-three" data-anchor="work">
-      My Work.
+      Our work
+    </div>
+
+    <!-- Request Section -->
+    <div class="section slide-four" data-anchor="request">
+      <form name="inquire" id="inquire" class="request-form" action="//formspree.io/mukmeenmaisarah@gmail.com" method="POST">
+        <div class="request-input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" class="request-input" placeholder="Hello World" autocomplete="off" />
+        </div>
+        <div class="request-input-group">
+          <label for="name">Email</label>
+          <input type="text" id="email" name="email" class="request-input" placeholder="Hello World" autocomplete="off" />
+        </div>
+        <div class="request-input-group">
+          <label for="name">Phone</label>
+          <input type="text" id="guests" name="guests" class="request-input" placeholder="Hello World" autocomplete="off" />
+        </div>
+        <div class="submit-container">
+          <button class="submit-btn" type="submit">Continue</button>
+          <input type="hidden" name="_next" value="/index.html" />
+          <input type="hidden" name="_cc" value="nikmdyusof@mukmeenmaisarah.com,zahariahothman@mukmeenmaisarah.com,juliaayesya@mukmeenmaisarah.com" />
+          <input type="hidden" name="_subject" value="Wedding RSVP" />
+        </div>
+      </form>
     </div>
 
     <!-- About Us Section -->
-    <div class="section slide-four" data-anchor="about">
+    <div class="section slide-five" data-anchor="about">
       <div class="component">
-        <h2 class="js-follow-us">Follow Us</h2>
+        <h2 class="js-follow-us">Satu Hearty</h2>
         <a href="https://www.facebook.com/satuhearty/" class="icon icon-slide facebook" target="_blank">facebook</a>
         <a href="https://twitter.com/satuhearty/" class="icon icon-slide twitter" target="_blank">twitter</a>
         <a href="https://www.instagram.com/satuhearty/" class="icon icon-slide instagram" target="_blank">instagram</a>
       </div>
     </div>
+
+    <!-- Footer Section -->
     <div class="section fp-auto-height footer" data-anchor="slide-five">
       <div class="copyright">
         &copy; 2016 Satu Hearty Sdn Bhd
@@ -129,33 +203,6 @@
   </div>
 
   <div class="md-overlay"></div>
-
-  <!--<section class="container four slide-four request-section">-->
-    <!--<form name="inquire" id="inquire" class="request-form" action="//formspree.io/mukmeenmaisarah@gmail.com" method="POST">-->
-      <!--<div class="request-input-group">-->
-        <!--<label for="name">My Name is </label>-->
-        <!--<input type="text" id="name" name="name" class="request-input" placeholder="Hello World" autocomplete="off" />-->
-      <!--</div>-->
-      <!--<div class="request-input-group">-->
-        <!--<label for="name">My Email is </label>-->
-        <!--<input type="text" id="email" name="email" class="request-input" placeholder="Hello World" autocomplete="off" />-->
-      <!--</div>-->
-      <!--<div class="request-input-group">-->
-        <!--<label for="name">My Phone # is </label>-->
-        <!--<input type="text" id="guests" name="guests" class="request-input" placeholder="Hello World" autocomplete="off" />-->
-      <!--</div>-->
-      <!--<div class="request-input-group">-->
-        <!--<label for="name">My Name is </label>-->
-        <!--<input type="text" id="attending" name="attending" class="request-input" placeholder="Hello World" autocomplete="off" />-->
-      <!--</div>-->
-      <!--<div class="submit-container">-->
-        <!--<button class="submit-btn" type="submit">Submit</button>-->
-        <!--<input type="hidden" name="_next" value="/index.html" />-->
-        <!--<input type="hidden" name="_cc" value="nikmdyusof@mukmeenmaisarah.com,zahariahothman@mukmeenmaisarah.com,juliaayesya@mukmeenmaisarah.com" />-->
-        <!--<input type="hidden" name="_subject" value="Wedding RSVP" />-->
-      <!--</div>-->
-    <!--</form>-->
-  <!--</section>-->
 
   <!-- JavaScript -->
   <script src="js/jquery-3.1.0.min.js"></script>

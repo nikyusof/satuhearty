@@ -521,14 +521,42 @@ div.outside {
 }
 
 .col-xs {
-	margin: 1vh;
 	padding: 1vh;
 	/*background-color: #7F7E7E;*/
 	border-radius: 10px;
 	margin: auto;
 }
 
+.info-block {
+	padding: 1vh;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.info-title {
+	font-weight: bold;
+}
+
+.info-description {
+	font-size: 85%;
+}
+
 .row {
 	padding: 0 3vh;
-	height: 25%
+	height: 10%
+}
+
+.rsvp-logo,
+.maps-logo,
+.website-logo {
+	width: 3vh;
+}
+
+.social-sharing-logo,
+.responsive-logo {
+	width: 13vh;
+}
+
+.photo-gallery-logo {
+	width: 4vh;
 }
