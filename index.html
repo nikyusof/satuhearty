@@ -56,8 +56,9 @@
       <div class="slide content" data-anchor="slide1">
         <h2 class="tlt">Satu Hearty</h2>
       </div>
-      <div class="slide" data-anchor="slide2">
+      <div class="slide slide-container" data-anchor="slide2">
         <img class="image-slider" src="images/slide-two.jpg" />
+        <h2 class="slide-text js-slide-text"></h2>
       </div>
       <div class="slide" data-anchor="slide3">
         <img class="image-slider" src="images/slide-three.jpg" />
@@ -74,14 +75,14 @@
         <div class="col-md-6 info-block">
           <div class="box">
             <img src="images/website.png" class="website-logo" />
-            <div class="info-title">Personalized wedding website.</div>
+            <h2 class="info-title">Personalized wedding website.</h2>
             <span class="info-description">Wedding cards are cool. Wedding websites are cooler.</span>
           </div>
         </div>
         <div class="col-md-6 info-block">
           <div class="box">
             <img src="images/responsive.png" class="responsive-logo" />
-            <div class="info-title">Responsive web design.</div>
+            <h2 class="info-title">Responsive web design.</h2>
             <span class="info-description">Supports all platforms (phone, tablet, laptop, and desktop).</span>
           </div>
         </div>
@@ -91,14 +92,14 @@
         <div class="col-md-6 info-block">
           <div class="box">
             <img src="images/social-sharing.png" class="social-sharing-logo" />
-            <div class="info-title">Social sharing.</div>
+            <h2 class="info-title">Social sharing.</h2>
             <span class="info-description">Include any social platforms of your preference.</span>
           </div>
         </div>
         <div class="col-md-6 info-block">
           <div class="box">
             <img src="images/maps.png" class="maps-logo" />
-            <div class="info-title">Maps Navigation.</div>
+            <h2 class="info-title">Maps Navigation.</h2>
             <span class="info-description">Make sure your attendees don't get lost.<br>Include maps navigation to your wedding location.</span>
           </div>
         </div>
@@ -108,14 +109,14 @@
         <div class="col-md-6 info-block">
           <div class="box">
             <img src="images/rsvp.png" class="rsvp-logo" />
-            <div class="info-title">RSVP.</div>
+            <h2 class="info-title">RSVP.</h2>
             <span class="info-description">Attendees can send RSVPs directly to your email.</span>
           </div>
         </div>
         <div class="col-md-6 info-block">
           <div class="box">
             <img src="images/photo-gallery.png" class="photo-gallery-logo" />
-            <div class="info-title">Photo Gallery.</div>
+            <h2 class="info-title">Photo Gallery.</h2>
             <span class="info-description">Have your own photo gallery for people to view.</span>
           </div>
         </div>
@@ -124,24 +125,26 @@
 
     <!-- Work Section -->
     <div class="section slide-three" data-anchor="work">
+      <h2>Our Work</h2>
       <div class="mm"></div>
-      <a href="http://mukmeenmaisarah.com" target="_blank" class="work-details">View website</a>
+      <a href="http://mukmeenmaisarah.com" target="_blank" class="work-details">mukmeenmaisarah.com &#8669;</a>
     </div>
 
     <!-- Request Section -->
     <div class="section slide-four" data-anchor="request">
+      <h2>Let's make your wedding memorable.</h2>
       <form name="inquire" id="inquire" class="request-form" action="//formspree.io/mukmeenmaisarah@gmail.com" method="POST">
         <div class="request-input-group">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" class="request-input" placeholder="Hello World" autocomplete="off" />
+          <input type="text" id="name" name="name" class="request-input" placeholder="" autocomplete="off" />
         </div>
         <div class="request-input-group">
           <label for="name">Email</label>
-          <input type="text" id="email" name="email" class="request-input" placeholder="Hello World" autocomplete="off" />
+          <input type="text" id="email" name="email" class="request-input" placeholder="" autocomplete="off" />
         </div>
         <div class="request-input-group">
           <label for="name">Phone</label>
-          <input type="text" id="guests" name="guests" class="request-input" placeholder="Hello World" autocomplete="off" />
+          <input type="text" id="guests" name="guests" class="request-input" placeholder="" autocomplete="off" />
         </div>
         <div class="submit-container">
           <button class="submit-btn" type="submit">Continue</button>
@@ -155,7 +158,8 @@
     <!-- About Us Section -->
     <div class="section slide-five" data-anchor="about">
       <div class="component">
-        <h2 class="js-follow-us">Satu Hearty</h2>
+        <h2 class="js-about">Satu Hearty</h2>
+        <p class="js-about-sub">Where technology meets love.</p>
         <a href="https://www.facebook.com/satuhearty/" class="icon icon-slide facebook" target="_blank">facebook</a>
         <a href="https://twitter.com/satuhearty/" class="icon icon-slide twitter" target="_blank">twitter</a>
         <a href="https://www.instagram.com/satuhearty/" class="icon icon-slide instagram" target="_blank">instagram</a>
@@ -180,6 +184,7 @@
   <script type="text/javascript" src="js/jquery.lettering.js"></script>
   <script type="text/javascript" src="js/jquery.textillate.js"></script>
   <script type="text/javascript" src="js/oridomi.min.js"></script>
+  <script type="text/javascript" src="js/minimit-anima.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

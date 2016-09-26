@@ -356,6 +356,22 @@ div.outside {
 	transition:350ms;
 }
 
+@media (max-width: 600px) {
+	.menu {
+		background: rgba(0, 0, 0, .75);
+	}
+
+	.submenu {
+		height: 30px;
+		font-size: 100%;
+	}
+
+  .float-menu {
+	  bottom: 5px;
+	  right: 5px;
+  }
+}
+
 .float-menu:hover ul {
 	max-height:1000px;
 	-webkit-transform:perspective(400) rotate3d(0,0,0,0);
@@ -531,15 +547,20 @@ div.outside {
 	padding: 1vh;
 	border-radius: 10px;
 	margin: auto;
+	transition: all .2s ease-in-out;
+}
+
+.info-block:hover {
+	transform: scale(1.2);
 }
 
 .info-title {
-	font-weight: bold;
-	margin-top: 2vh;
+	font-size: 1.3em;
+	margin: .6em 0;
 }
 
 .info-description {
-	font-size: 85%;
+	font-size: 100%;
 }
 
 .row {
@@ -566,15 +587,30 @@ div.outside {
 .mm {
 	margin: auto auto 3vh auto;
 	max-width: 30vh;
-	min-height: 12vh;
-	background: url('../images/mm.png') no-repeat center center;
-	background-size: 30vh;
+	height: 12vh;
+	background: url('../images/mm.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
 }
 
 .work-details {
-	z-index: 9999;
+	z-index: 1000000;
 }
 
 .work-details:hover {
 	text-decoration: underline;
+}
+
+.slide-container {
+	position: relative;
+}
+
+.slide-text {
+	position: absolute;
+	bottom: 50%;
+	left: 10%;
+	background: rgba(0, 0, 0, .7);
+	padding: 5px 10px;
+	font-size: 3em;
 }
