@@ -49,7 +49,7 @@ textarea {
 
 body,
 input {
-	font-size: 1em;
+	font-size: 12px;
 	color: white;
 	background-color: black;
 	line-height: 1.4;
@@ -204,6 +204,7 @@ div.outside {
 }
 
 .request-input {
+	font-size: 2vh !important;
 	border: 0;
 	background: none;
 	border-bottom: 2px solid;
@@ -222,7 +223,7 @@ div.outside {
 }
 
 .submit-btn:hover {
-	color: rgb(212, 145, 182);
+	color: black;
 	background-color: white;
 }
 
@@ -511,6 +512,28 @@ div.outside {
 	background: white;
 }
 
+.fp-slidesContainer {
+	width: 100%!important;
+	transform: none!important;
+}
+
+.fp-slide {
+	width: 100%!important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 0;
+	transition: all .9s ease-in-out;
+}
+
+.fp-slide.active {
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+}
+
 .satuhearty-wrap {
 	position: fixed;
 	z-index: 9999;
@@ -551,16 +574,16 @@ div.outside {
 }
 
 .info-block:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 .info-title {
-	font-size: 1.3em;
+	font-size: 130%;
 	margin: .6em 0;
 }
 
 .info-description {
-	font-size: 100%;
+	font-size: 110%;
 }
 
 .row {
@@ -594,7 +617,12 @@ div.outside {
 	background-size: cover;
 }
 
+.box {
+	padding: 0 5px;
+}
+
 .work-details {
+	font-size: 115%;
 	z-index: 1000000;
 }
 
@@ -606,11 +634,37 @@ div.outside {
 	position: relative;
 }
 
-.slide-text {
+.slide-two-text,
+.slide-three-text,
+.slide-four-text {
 	position: absolute;
-	bottom: 50%;
-	left: 10%;
 	background: rgba(0, 0, 0, .7);
-	padding: 5px 10px;
-	font-size: 3em;
+	padding: 10px 20px;
+	font-size: 1.5em;
+}
+
+.slide-two-text {
+	max-width: 50%;
+	top: 15%;
+	left: 5%;
+}
+
+.slide-three-text {
+	bottom: 20%;
+	right: 3%;
+}
+
+.slide-four-text {
+	top: 20%;
+	right: 5%;
+}
+
+.about-title {
+	font-size: 140%;
+	margin-bottom: 0;
+}
+
+.about-subtitle {
+	font-size: 110%;
+	margin: .5em 0 1em 0;
 }
