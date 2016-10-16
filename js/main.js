@@ -19,7 +19,7 @@ var ABOUT_SECTION = 5;
 var origami;
 
 /**
- * Origami initiation function
+ * Origami animation initiation function
  */
 function initiateAnimation(method, angle) {
   switch (method) {
@@ -99,7 +99,7 @@ function startAnimate(type) {
 }
 
 /**
- * Function to start animate the text
+ * Function to start animate the text for main section
  */
 function initializeTextillate($element) {
   var transitions = ['flash', 'bounce', 'shake', 'tada', 'swing', 'wobble', 'pulse', 'flip', 'flipInX',
@@ -134,6 +134,7 @@ $(document).ready(function() {
     anchors: ['home', 'info', 'work', 'request', 'about', 'copyright'],
     menu: '.menu',
     afterRender: function () {
+      initializeTextillate($('.js-slide-text1'));
       setInterval(function () {
         $.fn.fullpage.moveSlideRight();
       }, 6000);
