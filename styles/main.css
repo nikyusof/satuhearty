@@ -356,7 +356,11 @@ a:hover {
 	left: 5%;
 }
 
-.slide-one-text,
+.slide-one-text {
+	bottom: 30%;
+	right: 10%;
+}
+
 .slide-three-text {
 	bottom: 20%;
 	right: 3%;
