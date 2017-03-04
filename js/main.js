@@ -134,7 +134,6 @@ $(document).ready(function() {
     controlArrows: false,
     slidesNavigation: true,
     slidesNavPosition: 'bottom',
-    lockAnchors: true,
     sectionsColor : ['#000', '#000', '#000', '#000', '#000'],
     anchors: ['home', 'info', 'work', 'request', 'about', 'copyright'],
     menu: '.menu',
