@@ -124,6 +124,10 @@ function initializeTextillate($element) {
  * Initialization function
  */
 $(document).ready(function() {
+  if (window.location.href.indexOf('index.html') > -1) {
+    window.location.href = window.location.href.replace('index.html', '');
+  }
+
   var aboutInitialized = false;
 
   var fullpage = $('#fullpage').fullpage({
