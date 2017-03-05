@@ -141,7 +141,7 @@ $(document).ready(function() {
       initializeTextillate($('.js-slide-text1'));
       setInterval(function () {
         $.fn.fullpage.moveSlideRight();
-      }, 6000);
+      }, 4000);
     },
     onLeave: function (index, nextIndex) {
       if (nextIndex == ABOUT_SECTION && !aboutInitialized) {

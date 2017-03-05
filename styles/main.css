@@ -350,17 +350,12 @@ a:hover {
 	font-size: 1.5em;
 }
 
-.slide-two-text {
-	max-width: 50%;
-	top: 15%;
-	left: 5%;
-}
-
 .slide-one-text {
 	bottom: 30%;
 	right: 10%;
 }
 
+.slide-two-text,
 .slide-three-text {
 	bottom: 20%;
 	right: 3%;
