@@ -135,7 +135,7 @@ $(document).ready(function() {
     slidesNavigation: true,
     slidesNavPosition: 'bottom',
     sectionsColor : ['#000', '#000', '#000', '#000', '#000'],
-    anchors: ['home', 'info', 'work', 'request', 'about', 'copyright'],
+    anchors: ['home', 'info', 'work', 'crew', 'request', 'about', 'copyright'],
     menu: '.menu',
     afterRender: function () {
       initializeTextillate($('.js-slide-text1'));
