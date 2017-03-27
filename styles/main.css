@@ -461,6 +461,14 @@ a:hover {
 	border: 3px solid #ffffff;
 }
 
+.company-info {
+	text-align: justify;
+	height: auto;
+	margin-bottom: 2vh;
+	padding: 0 4vh;
+	font-size: 120%;
+}
+
 /* =============================================================================
   FORM SECTION
 ============================================================================= */
